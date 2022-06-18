@@ -1,0 +1,60 @@
+﻿@font-face {
+    font-family: 'vazir';
+    src: url('vazir.eot') format('eot'),
+     url('vazir.ttf') format('truetype'),
+    url('vazir.woff') format('woff'),
+    url('vazir.woff2') format('woff2');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.loader{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.loader.hidden{
+    animation: fadeOut 1s;
+    -webkit-animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+h2{
+    font-size: 40px;
+}
+
+.img{
+    width: 90%;
+
+}
+
+.img .thumb{
+    width: 90%;
+    border-radius:7px;
+}
